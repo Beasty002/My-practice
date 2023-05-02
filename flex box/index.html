@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 20px;
+        }
+        
+        #parent {
+            border: 2px solid black;
+            height: 600px;
+            padding: 00px;
+            display: flex;
+            /* aligns the content on the main axis and default is in horiazntal axis*/
+            justify-content: space-evenly;
+            /*
+            flex-start: aligns items on the left/starting side;
+            flex-end: aligns items on the right/ending side;
+            centre : aligns items on the centre;
+            space around: create space between items evenly also some space between the left and right side of first and last items;
+            space evenly : create a space evenly between the items also between the left and right side of first and last items;
+            space between : create space between items evenly;
+            */
+            align-items: center;
+        }
+        
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+
+</body>
+
+</html>
