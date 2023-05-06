@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* We can combine diffrent selectors */
+        
+        p {
+            color: yellow;
+        }
+        
+        .box p {
+            /* Applies to any descendant */
+            color: red;
+        }
+        
+        .hello,
+        .hlo {
+            color: black;
+        }
+        
+        .parent>.child {
+            /* Applies to only child */
+            color: red;
+        }
+        
+        div.classname {
+            /*can use any selector, no space , meaniong a element with the given selector specifically*/
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Yellow text </p>
+    <div class="box inner-box">
+        <p>White TExt</p>
+        <span>hello</span>
+    </div>
+    <div class="hello">sasas</div>
+    <div class="hlo">okok</div>
+    <div class="parent">
+        <h1>dsds</h1>
+        <div class="child">
+            <h1>child</h1>
+        </div>
+    </div>
+    <div class="classname">CLAss name</div>
+
+</body>
+
+</html>
