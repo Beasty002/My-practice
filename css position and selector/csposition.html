@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative {
+            border: 2px dotted red;
+            height: 200px;
+            width: 200px;
+            background-color: black;
+        }
+        
+        .inner {
+            opacity: 0.3;
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            left: 2px;
+            /* top left right bottom indicate position from them*/
+            top: 2px;
+        }
+        
+        .a1 {
+            position: absolute;
+            top: 210px;
+            left: 190px;
+            border: 2px dotted red;
+            height: 200px;
+            width: 200px;
+            background-color: black;
+        }
+        
+        .a2 {
+            position: absolute;
+            opacity: 0.3;
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            left: px;
+            top: px;
+        }
+        
+        .a3 {
+            opacity: 1;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(0, 255, 72);
+        }
+        
+        .a4 {
+            opacity: 1;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(0, 179, 255);
+            top: 0;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        1) static position : normal that we currently use 
+        2) relative position : moving relative to its current/default position
+        3) absolute position : position relative to its nearest positioning ancestor if no positioned ancestor than relative to top left corner of page;
+     -->
+    <div class="relative">
+        <div class="inner"></div>
+    </div>
+    <br><br>
+
+    <div class="a1">
+        <div class="a2">
+            <div class="a3"></div>
+            <div class="a4"></div>
+
+        </div>
+
+</body>
+
+</html>
