@@ -9,6 +9,41 @@
             color: white;
         }
         
+        h1 {
+            display: inline;
+            /*CAnnot change the height and width of the element takes space as per needed*/
+            background: black;
+            width: 20px;
+        }
+        
+        .inline {
+            display: inline;
+            background-color: black;
+            height: 400px;
+            /*Wont work since display inline*/
+        }
+        
+        .inlineBlock {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            width: 200px;
+            /*Works since inline block functions as inline but can change teh height and width*/
+            height: 60px;
+        }
+        
+        h2 {
+            background: black;
+            display: inline;
+        }
+        
+        span {
+            display: block;
+            /* can change the height and width also it takes whole line*/
+            background-color: green;
+            border: 2px solid black;
+        }
+        
         .flag {
             position: relative;
             width: 900px;
@@ -56,6 +91,11 @@
 </head>
 
 <body>
+    <h1>The flag </h1>
+    <h2>of laos</h2>
+    <span> The flag of laos</span>
+    <span class="inlineBlock"> Inline block</span>
+    <p class="inline"> inline block</p>
     <div class="flag">
         <p>The Flag</p>
         <div>
