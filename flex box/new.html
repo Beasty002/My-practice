@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flex-container {
+            display: flex;
+            /*puts it's element in flex */
+            text-align: center;
+        }
+        
+        .card {
+            background-color: blue;
+            border: 2px solid white;
+            flex: 1;
+            /*Equal width distribution*/
+            height: 30px;
+        }
+        
+        .first {
+            flex: 2;
+            /*This container gets double width*/
+        }
+        
+        .second {
+            flex: 0.5;
+            /*This container gets half width*/
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="first card">First</div>
+        <div class="second card">Second</div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+</body>
+
+</html>
