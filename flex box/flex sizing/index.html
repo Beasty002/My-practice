@@ -23,9 +23,12 @@
             /*max size attainable by the items*/
             /*min-width: 100px;*/
             /*min size attainable by the items*/
-            flex-grow: 1;
-            /*If space to grow than it grows to cover all width*/
-            flex-shrink: 0;
+            flex-grow: 0;
+            /*If space to grow than it grows to cover space (Grow beyond flex grow ) till max width*/
+            flex-shrink: 1;
+            /*shrink beyond flex basis till min width*/
+            /*flex:1 1 0;*/
+            /* first value is grow second shrink and third is flex basis*/
         }
     </style>
 </head>
