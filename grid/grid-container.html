@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 100px auto;
+            /*In row auto is fit content*/
+            grid-template-columns: 200px auto;
+            /*In column auto is 100%*/
+        }
+        
+        .grid-item {
+            border: 2px solid red;
+        }
+        
+        .container2 {
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+            /*2nd row woll always be double of the first*/
+            grid-template-columns: 1fr 3fr;
+            /*2nd column will always be triple of first*/
+        }
+        
+        .grid-item2 {
+            border: 2px solid red;
+        }
+        
+        .container3 {
+            display: grid;
+            grid-template-rows: 50px 100px;
+            /*2nd row woll always be double of the first*/
+            grid-template-columns: 50px minmax(100px, 400px);
+            /*2nd column will always be triple of first*/
+        }
+        
+        .grid-item3 {
+            border: 2px solid red;
+        }
+        
+        .container4 {
+            display: grid;
+            grid-template-rows: repeat(2, 50px);
+            /*equivalent to 50px 50px*/
+            grid-template-columns: repeat(2, 50px);
+            grid-auto-rows: 100px;
+        }
+        
+        .grid-item4 {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Auto</h1>
+    <div class="container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h1>fr(fraction)</h1>
+    </div>
+    <div class="container2">
+        <div class="grid-item2">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item2">3</div>
+        <div class="grid-item2">4</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h1>min max</h1>
+    </div>
+    <div class="container3">
+        <div class="grid-item3">1</div>
+        <div class="grid-item3">2</div>
+        <div class="grid-item3">3</div>
+        <div class="grid-item3">4</div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <h1>Repeat</h1>
+
+    <div class="container4">
+        <div class="grid-item4">1</div>
+        <div class="grid-item4">2</div>
+        <div class="grid-item4">3</div>
+        <div class="grid-item4">4</div>
+        <div class="grid-item4">5</div>
+        <div class="grid-item4">5</div>
+        <div class="grid-item4">5</div>
+    </div>
+
+</body>
+
+</html>
