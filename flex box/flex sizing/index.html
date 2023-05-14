@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .items {
+            border: solid 2px red;
+            /*width: 50px;*/
+            /*affects width always even to non flex items*/
+            flex-basis: 100px;
+            /*Only to flex items and if row flex then affects row-width and if column flex affects height*/
+            /*max-width: 200px;*/
+            /*max size attainable by the items*/
+            /*min-width: 100px;*/
+            /*min size attainable by the items*/
+            flex-grow: 1;
+            /*If space to grow than it grows to cover all width*/
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<!-- Content width < Width < flex-basis < min/max - width -->
+
+<body>
+    <div class="container">
+        <div class="items">Home</div>
+        <div class="items">About</div>
+        <div class="items">Contact Us</div>
+        <div class="items">The best programming school in the world</div>
+    </div>
+
+</body>
+
+</html>
