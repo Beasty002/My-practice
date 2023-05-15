@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Placement</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            height: 100vh;
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+        }
+        
+        .cowboy {
+            background-color: #00B9FF;
+            grid-column: span 2;
+        }
+        
+        .astronaut {
+            order: 3;
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;*/
+            /*either row end or column end it ends at the beginning before gap of the given cell i.e ends at col 3 which is before gap beginning of 4*/
+            grid-area: 2 / 1 / 4 / 4;
+            /*row start ,col start , row end ,col end*/
+        }
+        
+        .book {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item cowboy">🤠</div>
+        <div class="item astronaut">👨‍🚀</div>
+        <div class="item book">📖</div>
+    </div>
+</body>
+
+</html>
