@@ -6,67 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Key frames and animation</title>
     <style>
-        .container {
-            background-color: greenyellow;
-            display: flex;
-        }
-        
-        .box {
-            background-color: green;
-            width: 250px;
-            height: 250px;
-            position: relative;
-            /*animation-name: beasty;*/
-            /*We need to name our animation*/
-            animation-name: beasty1;
-            animation-duration: 8s;
-            animation-iteration-count: 1;
-            /*animation-fill-mode: forwards;*/
-            /*Animation end result remains in the width specified in "to" part*/
-            /*animation-fill-mode: alternate;*/
-            /*Animation end result returns to normal*/
-            /*animation-timing-function: ease-in-out;*/
-            /*first animation slow then fast and slow */
-            /*animation-timing-function: ease-in;*/
-            /*first Animation slow the fast*/
-            /*animation-timing-function: ease-out;*/
-            /*First animation slfaast then*/
-            /*animation-delay: 3s;*/
-            /*Animation starts after 3 second*/
-            /*animation-direction: reverse;*/
-            /*-----------------ANIMATION SHORTHAND------------------*/
-            /*animation: animation-name animation-duration animation-timing-function animation-delay animation-teration-count animation-fill-mode;*/
-            /*animation: beasty 5s ease-in 4s infinite forwards;*/
-        }
-        
-        @keyframes beasty1 {
-            0% {
-                top: 0;
-                left: 0;
-            }
-            25% {
-                top: 250px;
-                left: 0px;
-            }
-            75% {
-                top: 250px;
-                left: 250px;
-            }
-            100% {
-                top: 0px;
-                left: 250px;
-            }
-        }
-        
-        @keyframes beasty {
-            from {
-                width: 0;
-            }
-            to {
-                width: 1400px;
-            }
-        }
+
     </style>
+    <link rel="stylesheet" href="./ANIMATION.css">
 </head>
 
 <body>
