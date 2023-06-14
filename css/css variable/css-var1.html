@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         :root {
+            --box-color: violet;
+        }
+        
+        .box {
+            --box-color: rgb(146, 146, 255);
+            /*Scope is only inside the .box so this is loacal variable*/
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: solid 1px red;
+            box-shadow: 3px 3px var(--box-color);
+            margin: 2px 9px;
+        }
+        
+        .container {
+            display: flex;
+            background-color: var(--box-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>
