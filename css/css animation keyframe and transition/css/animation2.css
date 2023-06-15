@@ -1,0 +1,62 @@
+* {
+    padding-left: 300px;
+}
+
+
+/*---------Utility class -------------*/
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate--infinite {
+    animation-iteration-count: infinite;
+}
+
+.animate--delay-1s {
+    animation-delay: 1s;
+}
+
+.animate--fast {
+    animation-duration: 0.6s;
+}
+
+.animate--slow {
+    animation-duration: 3s;
+}
+
+
+/*-------Animation---------------*/
+
+@keyframes slidingLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+.slidingLeft {
+    animation-name: slidingLeft;
+    animation-timing-function: ease-in;
+    /*text-align: center;*/
+    /*in forwards the elemenet final position is the one defined in "to" and in backward if we have transform then the position as defined by it in not then the original*/
+    /*animation: heading 2s ease 2s 1 normal backwards;*/
+    /*transform: translateX(-150px);*/
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-timing-function: linear;
+}
