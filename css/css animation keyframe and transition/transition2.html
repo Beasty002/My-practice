@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        .btn {
+            align-self: center;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0.5em 1em;
+            color: rgba(255, 88, 88, 0.792);
+            background-color: rgba(255, 88, 88, 0.226);
+            border: 10px solid rgba(255, 88, 88, 0.792);
+            border-radius: 5px;
+            /*We can use keyword "all" if we want to have transition effect on all and by iusing comma "," we can can add property to other property*/
+            transition: transform 0.4s ease-in 0s, color 1s ease 0s;
+            /*transition: color 1s ease 0s;*/
+            /*transition: border-color 3s ease-in-out 0s;*/
+        }
+        
+        .btn:hover {
+            transform: translateY(-10px);
+            color: black;
+            /*border-color: black;*/
+        }
+    </style>
+    <div class="container"><button class="btn">Learn More</button></div>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
