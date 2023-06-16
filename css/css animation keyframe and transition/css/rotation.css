@@ -1,0 +1,30 @@
+* {
+    padding: 50px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wheel {
+    height: 150px;
+    width: 150px;
+    border: dotted 9px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px;
+    animation: rotate 1s ease 0s infinite;
+}
+
+.middle {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 400px;
+}
